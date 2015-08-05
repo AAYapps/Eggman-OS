@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity name="eggmanOS.exe" version="1.0.0.3" publicKeyToken="8dba6930647ffe0a" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="eggman.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="eggmanOS" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="eggmanOS.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Core" version="3.5.0.0" publicKeyToken="b77a5c561934e089" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="WindowsBase" version="3.0.0.0" publicKeyToken="31bf3856ad364e35" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AxInterop.WMPLib.dll" size="61440">
+      <assemblyIdentity name="AxInterop.WMPLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>+S3qS69cliiA7wF4boJ7QuYdb1o=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="eggmanOS.exe" size="8795136">
+      <assemblyIdentity name="eggmanOS" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>mStPc18cwprhOqAH08XNwVzW75U=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.WMPLib.dll" size="339968">
+      <assemblyIdentity name="Interop.WMPLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>v2UW9PARSBwXNtOvvcj2mtgcOo0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.VisualBasic.PowerPacks.Vs.dll" size="356352">
+      <assemblyIdentity name="Microsoft.VisualBasic.PowerPacks.Vs" version="9.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>yGqAkJQhXwbYfldrh42js2PeYLk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="eggman.ico" size="4286">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>hdperHkGABkKa7bfWH0j05rPHl4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="eggmanOS.exe.config" size="1165">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>AxzOomDFOwujghDZlI8lQojSys0=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=Joshua-PC\Joshua" issuerKeyHash="08117b3b91fe03dfb5a204d3f8babf4a89922eb9" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>fijT7OG6ZX5xwoMwoOzvtldAqRw=</DigestValue></Reference></SignedInfo><SignatureValue>fL6+aRTzeHDcIDf5oFAIHZSkk2Bsaq+aeDnOsAN1rNmAdWzjO/D5AcXGLga7QAz/AjbuVWlkBdV4sOBTOTzh526QmjMI4Bzwazbuf4+E5Y75ifTBhjD9dQ9agYN84d5loyRGRtQKyywDyY0hxnWl7hHE6HujB3jCCYhqE6F+sCw=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>2IbxIEjFhHyo0bQsKhI85vat6xihQ1hZUfViYWLkjTuWkr4xBd9kjjxxsSDPLcWfn4azbSp3cE86XXxiNKeQ2qQEf6t/ydvDfd5uDFN85kDrwCnwKa2WyST7kkt2O5uyaYvpBnZsqJt0c/NqZ7Mwcv9t40bJPdZTYxrIuUO3KVU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="1ca94057b6efeca03083c2717e65bae1ecd3287e" Description="" Url=""><as:assemblyIdentity name="eggmanOS.exe" version="1.0.0.3" publicKeyToken="8dba6930647ffe0a" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Joshua-PC\Joshua</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>0UlERAK6DwWtTyYeQEjOzI03gg8=</DigestValue></Reference></SignedInfo><SignatureValue>gey036PqdUOUaXz31OYTcm3R/kcwX0AKz6tkQ2k//aiqDpQj6kcROXLAxMtrSw1pXjqlaN5+hwCLDmIELBiq2MOgBuGK846+gszHsTN11GnpkCP48OOaNAuJ9U5MLA3EWmldrp0aBl1BRSVbQCig4Crd0nb/7vtfnygSLeB4lic=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>2IbxIEjFhHyo0bQsKhI85vat6xihQ1hZUfViYWLkjTuWkr4xBd9kjjxxsSDPLcWfn4azbSp3cE86XXxiNKeQ2qQEf6t/ydvDfd5uDFN85kDrwCnwKa2WyST7kkt2O5uyaYvpBnZsqJt0c/NqZ7Mwcv9t40bJPdZTYxrIuUO3KVU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB2TCCAUKgAwIBAgIQYonY/xq1E4xIUc0TIq8pvjANBgkqhkiG9w0BAQUFADArMSkwJwYDVQQDHiAASgBvAHMAaAB1AGEALQBQAEMAXABKAG8AcwBoAHUAYTAeFw0xMjA4MTIwNjQ1NTVaFw0xMzA4MTIxMjQ1NTVaMCsxKTAnBgNVBAMeIABKAG8AcwBoAHUAYQAtAFAAQwBcAEoAbwBzAGgAdQBhMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDYhvEgSMWEfKjRtCwqEjzm9q3rGKFDWFlR9WJhYuSNO5aSvjEF32SOPHGxIM8txZ+fhrNtKndwTzpdfGI0p5DapAR/q3/J28N93m4MU3zmQOvAKfAprZbJJPuSS3Y7m7Jpi+kGdmyom3Rz82pnszBy/23jRsk91lNjGsi5Q7cpVQIDAQABMA0GCSqGSIb3DQEBBQUAA4GBAHYK38H2r2In4R/r8QcBE3Cw52QQmb4DzTCW049N6c+o+pfIiDjLd8T9Ui7P+LlpM2lpV0nWuQOgoiGbm+L9rY7pxRGdskfzUpUhgh5UZ4eWL4Wt+cZNLv3/yaGwZLBDSeLnNwyzLbO+nU23M+4ma1U3XBSXYB5vY8/dkUxBZMq8</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
