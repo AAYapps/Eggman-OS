@@ -33,8 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>
-    </ApplicationIcon>
+    <ApplicationIcon>favicon %282%29.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>Eggman_OS.Program</StartupObject>
@@ -125,6 +124,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="eggman.ico" />
+    <Content Include="favicon %282%29.ico" />
     <None Include="Resources\chao1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
