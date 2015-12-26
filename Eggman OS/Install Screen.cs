@@ -13,6 +13,8 @@ namespace Eggman_OS
 {
     public partial class Install_Screen : Form
     {
+        System.Media.SoundPlayer player = new System.Media.SoundPlayer(Properties.Resources._001918_);
+
         public Install_Screen()
         {
             InitializeComponent();
@@ -21,16 +23,23 @@ namespace Eggman_OS
         string holdtext = "Formating";
         bool installing = false;
 
+        void writefiles(byte[] Resource, string outputpath)
+        {
+            MemoryStream mp3file = new MemoryStream(Resource);
+            using (FileStream file = new FileStream(outputpath, FileMode.Create, FileAccess.Write))
+            {
+                byte[] bytes = new byte[mp3file.Length];
+                mp3file.Read(bytes, 0, (int)mp3file.Length);
+                file.Write(bytes, 0, bytes.Length) ;
+                mp3file.Close();
+            }
+        }
+
         public void start()
         {
             Show();
+            player.PlayLooping(); ;
             Installertime.Enabled = true;
-            if (!Directory.Exists(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\EggmanOS Directory"))
-            {
-                Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\EggmanOS Directory");
-                Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\EggmanOS Directory\Gamesave");
-                File.Create(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\EggmanOS Directory\Gamesave\Save.ETF");
-            }
         }
 
         int count = 0;
@@ -43,6 +52,63 @@ namespace Eggman_OS
                 Installprog.Value = count;
                 switch (count)
                 {
+                    case 1:
+                        Directory.CreateDirectory(Eggkernel.gamefolder);
+                        Realinstall.Items.Add(Eggkernel.gamefolder + " Created");
+                        Application.DoEvents();
+                        Directory.CreateDirectory(Eggkernel.gamefolder + @"Gamesave");
+                        Realinstall.Items.Add(Eggkernel.gamefolder + @"Gamesave" + " Created");
+                        Application.DoEvents();
+                        Directory.CreateDirectory(Eggkernel.OSfolder);
+                        Realinstall.Items.Add(Eggkernel.OSfolder + " Created");
+                        Application.DoEvents();
+                        Directory.CreateDirectory(Eggkernel.eggsys32folder);
+                        Realinstall.Items.Add(Eggkernel.eggsys32folder + " Created");
+                        Application.DoEvents();
+                        Directory.CreateDirectory(Eggkernel.mediafolder);
+                        Realinstall.Items.Add(Eggkernel.mediafolder + " Created");
+                        Application.DoEvents();
+                        File.WriteAllBytes(Eggkernel.mediafolder + "eggtime.mpg", Properties.Resources.eggtime);
+                        Realinstall.Items.Add("eggtime.mpg Created");
+                        Application.DoEvents();
+                        File.WriteAllBytes(Eggkernel.mediafolder + "t.mp3", Properties.Resources.t);
+                        Realinstall.Items.Add("t.mp3 Created");
+                        Application.DoEvents();
+                        File.WriteAllBytes(Eggkernel.mediafolder + "tt.mp3", Properties.Resources.tt);
+                        Realinstall.Items.Add("tt.mp3 Created");
+                        Application.DoEvents();
+                        File.WriteAllBytes(Eggkernel.mediafolder + "MLP_SunshineRemix.mp3", Properties.Resources.MLP_SunshineRemix);
+                        Realinstall.Items.Add("MLP_SunshineRemix.mp3 Created");
+                        Application.DoEvents();
+                        File.WriteAllBytes(Eggkernel.eggsys32folder + "video.exe", Properties.Resources.video);
+                        Realinstall.Items.Add("video.exe Created");
+                        Application.DoEvents();
+                        File.WriteAllBytes(Eggkernel.eggsys32folder + "ftp.exe", Properties.Resources.ftp);
+                        Realinstall.Items.Add("ftp.exe Created");
+                        Application.DoEvents();
+                        File.WriteAllBytes(Eggkernel.mediafolder + "KingSpartaX37_aka__Delta_Brony_____Sonic_Colors_x_MLP__Reach_For_The_Elements_of_Harmony.mp3", Properties.Resources.KingSpartaX37_aka__Delta_Brony_____Sonic_Colors_x_MLP__Reach_For_The_Elements_of_Harmony);
+                        Realinstall.Items.Add("KingSpartaX37_aka__Delta_Brony_____Sonic_Colors_x_MLP__Reach_For_The_Elements_of_Harmony.mp3 Created");
+                        Application.DoEvents();
+                        File.WriteAllBytes(Eggkernel.mediafolder + "windows 8 startup.mp3", Properties.Resources.Windows_8_startup);
+                        Realinstall.Items.Add("windows 8 startup.mp3 Created");
+                        Application.DoEvents();
+                        File.WriteAllBytes(Eggkernel.mediafolder + "_003661_.mp3", Properties.Resources._003661_);
+                        Realinstall.Items.Add("_003661_.mp3 Created");
+                        Application.DoEvents();
+                        File.WriteAllBytes(Eggkernel.eggsys32folder + "EggmanPlayer.exe", Properties.Resources.EggmanPlayer);
+                        Realinstall.Items.Add("EggmanPlayer.exe");
+                        Application.DoEvents();
+                        File.WriteAllBytes(Eggkernel.eggsys32folder + "AxInterop_WMPLib.dll", Properties.Resources.AxInterop_WMPLib);
+                        Realinstall.Items.Add("AxInterop_WMPLib.dll");
+                        Application.DoEvents();
+                        File.WriteAllBytes(Eggkernel.eggsys32folder + "Interop_WMPLib.dll", Properties.Resources.Interop_WMPLib);
+                        Realinstall.Items.Add("Interop_WMPLib.dll");
+                        Application.DoEvents();
+                        Directory.CreateDirectory(Eggkernel.eggsys32folder + "Resources\\");
+                        File.WriteAllBytes(Eggkernel.eggsys32folder + "Resources\\" + "Nuclear Explosion 2.mp4", Properties.Resources.Nuclear_Explosion_2);
+                        Realinstall.Items.Add("Nuclear Explosion 2.mp4");
+                        Application.DoEvents();
+                        break;
                     case 5:
                         Actionlbl.Text = "Installing Keyboard Driver";
                         break;
@@ -106,6 +172,7 @@ namespace Eggman_OS
                         Actionlbl.Text = "Loading Login System Settup";
                         break;
                     case 100:
+                        player.Stop();
                         Installer.Loginsettup.Show();
                         Close();
                         break;

@@ -1,6 +1,8 @@
-﻿namespace Eggman_OS
+﻿using System.Windows.Forms;
+
+namespace Eggman_OS
 {
-    partial class Desktop_Envirnment:System_variables
+    partial class Desktop_Envirnment:Form
     {
         /// <summary>
         /// Required designer variable.
@@ -43,6 +45,7 @@
             this.Commandegg.ReadOnly = true;
             this.Commandegg.Size = new System.Drawing.Size(1303, 607);
             this.Commandegg.TabIndex = 1;
+            this.Commandegg.VisibleChanged += new System.EventHandler(this.Commandegg_VisibleChanged);
             this.Commandegg.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Commandegg_KeyDown);
             // 
             // Desktop_Envirnment

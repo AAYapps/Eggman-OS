@@ -121,7 +121,193 @@
   <data name="chao1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\chao1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Eggman installer image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Eggman_installer_image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Eggman installer image.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BEEP6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BEEP6.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button3.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Car_Crash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Car_Crash.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DrEggmanLogoPerspective" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DrEggmanLogoPerspective.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DrEggmanLogoPerspective1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DrEggmanLogoPerspective.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dr_eggman" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dr-eggman.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dr__Eggman" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dr__Eggman.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eggman" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eggman.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="errorbeep_first" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\errorbeep_first.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="hd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hd.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mw3goofysound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mw3goofysound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="no_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\no start.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="p4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\p4.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="p6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\p6.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="question" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\question.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="question2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\question2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="questiondone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\questiondone.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ROBO_036" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ROBO_036.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="shutdown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shutdown.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Snore" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Snore.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Sonic_Colours_Orbot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sonic-Colours-Orbot.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sonic_Colours_Orbot1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sonic-Colours-Orbot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StartUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StartUp.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="StartUp2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StartUp2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="START_101" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\START_101.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="two_pop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\two-pop.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="windows_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\windows 10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="windows_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\windows 7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="windows_8_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\windows 8.1.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Windows_Information_Bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Windows Information Bar.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ZZZ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ZZZ.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_001839_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\[001839].wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_001918_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\[001918].wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_002578_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\[002578].wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_003006_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\[003006].wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_0413" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\0413.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_117154" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\117154.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Backward" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Backward.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="eggerr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eggerr.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="eggmansay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eggmansay.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="eggmansleep" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eggmansleep.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="eggmanstart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eggmanstart.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="eggtime" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\eggtime.mpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Forward" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Forward.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="laught" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\laught.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Pause" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pause.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Play" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Play.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Stop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Stop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="t" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\t.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tt.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ftp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ftp.exe;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="KingSpartaX37_aka__Delta_Brony_____Sonic_Colors_x_MLP__Reach_For_The_Elements_of_Harmony" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KingSpartaX37 aka _Delta Brony_ - [Sonic Colors x MLP] Reach For The Elements of Harmony.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MLP_SunshineRemix" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MLP-SunshineRemix.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="video" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\video.exe;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Windows_8_startup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Windows 8 startup.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_003661_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\[003661].mpg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="AxInterop_WMPLib" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AxInterop.WMPLib.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="EggmanPlayer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EggmanPlayer.exe;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Interop_WMPLib" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Interop.WMPLib.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Nuclear_Explosion_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Nuclear Explosion 2.mp4;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Installer));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Welcomelbl = new System.Windows.Forms.Label();
@@ -38,6 +39,7 @@
             this.stopbutton = new System.Windows.Forms.Button();
             this.agreechk = new System.Windows.Forms.CheckBox();
             this.notagreechk = new System.Windows.Forms.CheckBox();
+            this.Visability = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -67,7 +69,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(13, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(310, 247);
+            this.label1.Size = new System.Drawing.Size(314, 247);
             this.label1.TabIndex = 2;
             this.label1.Text = resources.GetString("label1.Text");
             // 
@@ -136,6 +138,11 @@
             this.notagreechk.UseVisualStyleBackColor = true;
             this.notagreechk.Click += new System.EventHandler(this.notagreechk_Click);
             // 
+            // Visability
+            // 
+            this.Visability.Enabled = true;
+            this.Visability.Tick += new System.EventHandler(this.Visability_Tick);
+            // 
             // Installer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -176,6 +183,7 @@
         private System.Windows.Forms.Button stopbutton;
         private System.Windows.Forms.CheckBox agreechk;
         private System.Windows.Forms.CheckBox notagreechk;
+        private System.Windows.Forms.Timer Visability;
     }
 }
 

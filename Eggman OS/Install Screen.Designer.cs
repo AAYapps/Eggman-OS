@@ -34,8 +34,9 @@
             this.Installertime = new System.Windows.Forms.Timer(this.components);
             this.Installpic = new System.Windows.Forms.PictureBox();
             this.Formatpnl = new System.Windows.Forms.Panel();
-            this.Formatlbl = new System.Windows.Forms.Label();
             this.Formattingbar = new System.Windows.Forms.ProgressBar();
+            this.Formatlbl = new System.Windows.Forms.Label();
+            this.Realinstall = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.Installpic)).BeginInit();
             this.Formatpnl.SuspendLayout();
             this.SuspendLayout();
@@ -88,6 +89,13 @@
             this.Formatpnl.Size = new System.Drawing.Size(493, 150);
             this.Formatpnl.TabIndex = 3;
             // 
+            // Formattingbar
+            // 
+            this.Formattingbar.Location = new System.Drawing.Point(10, 71);
+            this.Formattingbar.Name = "Formattingbar";
+            this.Formattingbar.Size = new System.Drawing.Size(468, 23);
+            this.Formattingbar.TabIndex = 1;
+            // 
             // Formatlbl
             // 
             this.Formatlbl.AutoSize = true;
@@ -99,12 +107,19 @@
             this.Formatlbl.Text = "Formatting";
             this.Formatlbl.Click += new System.EventHandler(this.Formatlbl_Click);
             // 
-            // Formattingbar
+            // Realinstall
             // 
-            this.Formattingbar.Location = new System.Drawing.Point(10, 71);
-            this.Formattingbar.Name = "Formattingbar";
-            this.Formattingbar.Size = new System.Drawing.Size(468, 23);
-            this.Formattingbar.TabIndex = 1;
+            this.Realinstall.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Realinstall.BackColor = System.Drawing.Color.LightCoral;
+            this.Realinstall.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Realinstall.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Realinstall.FormattingEnabled = true;
+            this.Realinstall.ItemHeight = 25;
+            this.Realinstall.Location = new System.Drawing.Point(12, 482);
+            this.Realinstall.Name = "Realinstall";
+            this.Realinstall.Size = new System.Drawing.Size(712, 75);
+            this.Realinstall.TabIndex = 4;
             // 
             // Install_Screen
             // 
@@ -113,6 +128,7 @@
             this.BackColor = System.Drawing.Color.Red;
             this.ClientSize = new System.Drawing.Size(736, 559);
             this.Controls.Add(this.Formatpnl);
+            this.Controls.Add(this.Realinstall);
             this.Controls.Add(this.Installpic);
             this.Controls.Add(this.Actionlbl);
             this.Controls.Add(this.Installprog);
@@ -137,5 +153,6 @@
         private System.Windows.Forms.Panel Formatpnl;
         private System.Windows.Forms.ProgressBar Formattingbar;
         private System.Windows.Forms.Label Formatlbl;
+        private System.Windows.Forms.ListBox Realinstall;
     }
 }

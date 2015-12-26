@@ -4,22 +4,26 @@ Friend Class Form3
 	Inherits System.Windows.Forms.Form
 	
 	Private Sub Form3_Load(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles MyBase.Load
-		
-		Dim FileNum As Short
-		Dim DataArray() As Byte
-		
-		DataArray = My.Resources.STARTUP_103
-		
-		FileNum = FreeFile
-		FileOpen(FileNum, "C:\eggman.wav", OpenMode.Binary)
-		'UPGRADE_WARNING: Put was upgraded to FilePut and has a new behavior. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="9B7D5ADD-D8FE-4819-A36C-6DEDAF088CC7"'
-		FilePut(FileNum, DataArray, 1)
-		FileClose(FileNum)
-		
-		load_Renamed.Value = 0
-		Dim a As Double
-		Dim b As Double
-	End Sub
+        Try
+            Dim FileNum As Short
+            Dim DataArray() As Byte
+
+            DataArray = My.Resources.STARTUP_103
+
+            FileNum = FreeFile()
+            FileOpen(FileNum, "C:\eggman.wav", OpenMode.Binary)
+            'UPGRADE_WARNING: Put was upgraded to FilePut and has a new behavior. Click for more: 'ms-help://MS.VSCC.v90/dv_commoner/local/redirect.htm?keyword="9B7D5ADD-D8FE-4819-A36C-6DEDAF088CC7"'
+            FilePut(FileNum, DataArray, 1)
+            FileClose(FileNum)
+
+            load_Renamed.Value = 0
+            Dim a As Double
+            Dim b As Double
+        Catch ex As Exception
+
+        End Try
+
+    End Sub
 	
 	Private Sub Timer1_Tick(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles Timer1.Tick
 		Dim b As Object

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,8 +30,40 @@ namespace Eggman_OS
 
         private void Lohincreatebtn_Click(object sender, EventArgs e)
         {
-            logcreateproc.Visible = true;
-            logcreatetimer.Enabled = true;
+            if (Passwordtxt.Text == CPasswordtxt.Text)
+            {
+                logcreateproc.Visible = true;
+                logcreatetimer.Enabled = true;
+                Eggkernel.username = Usernametxt.Text;
+                Eggkernel.password = Passwordtxt.Text;
+
+                try
+                {
+                    //Pass the filepath and filename to the StreamWriter Constructor
+                    StreamWriter sw = new StreamWriter(Eggkernel.gamefolder + "Gamesave\\GameSave.ETF");
+
+                    //Write a line of text
+                    sw.WriteLine("User: " + Usernametxt.Text);
+
+                    //Write a second line of text
+                    sw.WriteLine("Password: " + Passwordtxt.Text);
+
+                    sw.WriteLine("Passwordhint: " + Passhint.Text);
+
+                    sw.WriteLine("Login Type: " + loginautochk.Checked);
+
+                    //Close the file
+                    sw.Close();
+                }
+                catch (Exception f)
+                {
+                    MessageBox.Show("Exception: " + f.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Password does notmatch the confirm");
+            }
         }
 
         private void userlbl_Click(object sender, EventArgs e)
