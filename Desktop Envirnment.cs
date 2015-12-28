@@ -7,8 +7,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 using System.Windows.Forms;
-
+using TTSEngineLib;
 namespace Eggman_OS
 {
     public partial class Desktop_Envirnment : Form
@@ -20,12 +21,17 @@ namespace Eggman_OS
         bool runonce = false;
         bool caretblick = false;
         public string commandstring = "";
-        static bool projecteggactive = false;
+        public static bool projecteggactive = false;
         static bool systemcommandeggopen = false;
 
         public Desktop_Envirnment()
         {
             InitializeComponent();
+        }
+
+        public void commandtextview(bool visible)
+        {
+            Commandegg.Visible = visible;
         }
 
         public void Print(string text, int interval)
@@ -60,7 +66,7 @@ namespace Eggman_OS
                 {
                     Commandegg.Text = holdtext + "";
                 }
-                Text = commandstring;
+                //Text = commandstring;
 
                 if (Commandegg.Visible)
                 {
@@ -382,13 +388,13 @@ namespace Eggman_OS
                 }
                 commandstring = "";
             }
-            else if (commandstring.Contains("print"))
+            else if (commandstring.StartsWith("print"))
             {
                 Commandegg.Text = holdtext;
                 Print(commandstring.Remove(0, 5), 100);
                 commandstring = "";
             }
-            else if (commandstring.Contains("cmd "))
+            else if (commandstring.StartsWith("cmd "))
             {
                 Commandegg.Text = holdtext;
                 ProcessStartInfo command = new ProcessStartInfo("cmd");
@@ -418,10 +424,11 @@ namespace Eggman_OS
                     Commandegg.Hide();
                 }
             }
-            else if (commandstring == "eggmanplayer")
+            else if (commandstring.StartsWith("Speak "))
             {
-                holdtext += "Loading Eggman Player";
-                Process.Start(Eggkernel.eggsys32folder + "EggmanPlayer.exe");
+                System.Speech.Synthesis.SpeechSynthesizer speak = new System.Speech.Synthesis.SpeechSynthesizer();
+                speak.SpeakAsync(commandstring.Remove(0,5));
+                //Process.Start(Eggkernel.eggsys32folder + "EggmanPlayer.exe");
             }
             else
             {
