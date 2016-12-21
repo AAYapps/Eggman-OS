@@ -1,2 +1,4 @@
 # Eggman-OS
-A sonic fan game that uses a different type of Player style
+A high quality rip of the Eggman-OS.
+
+The Eggman-OS is a high quality crapware made by the eggman croporation.
